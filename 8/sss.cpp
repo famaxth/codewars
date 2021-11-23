@@ -1,37 +1,20 @@
-#include <iostream>
 #include <vector>
+#include <bits/stdc++.h>
 
-long sumTwoSmallestNumbers(std::vector<int> numbers)
+using namespace std; 
+
+int findSmallest(vector <int> list)
 {
-    long arr[2] = {};
-    long minSize_1 = 9223372036854775807;
-    long minSize_2 = 9223372036854775807;
-    int size = sizeof(numbers)/sizeof(numbers[0]);
-
-    for (int i = 0; i < size; i++)
+  int min = list[0];
+  for (int i = 0; i < list.size(); i++)
+  {
+    if (list[i] < min)
     {
-        if (numbers[i] < minSize_1)
-        {
-            minSize_1 = numbers[i];
-        }
+      min = list[i];
     }
-    std::cout << minSize_1 << std::endl; 
-    arr[0] = minSize_1;
-      
-  
-    for (int x = 0; x < size; x++)
-    {
-        if (numbers[x] > minSize_1 && numbers[x] < minSize_2)
-        {
-            minSize_2 = numbers[x];
-        }
-    }
-    std::cout << minSize_1 << std::endl; 
-    arr[1] = minSize_2;
-  
-    return arr[0] + arr[1];
+  }
+  return min;
 }
-
 
 int main()
 {
