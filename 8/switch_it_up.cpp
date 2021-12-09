@@ -1,39 +1,14 @@
 #include <string>
 
-std::string switch_it_up(int na){
-  int n = na;
-  switch (n)
-  {
-      case 0:
-        return "Zero";
-        break;
-      case 1:
-        return "One";
-        break;
-      case 3:
-        return "Three";
-        break;
-      case 4:
-        return "Four";
-        break;
-      case 5:
-        return "Five";
-        break;
-      case 6:
-        return "Six";
-        break;
-      case 7:
-        return "Seven";
-        break;
-      case 8:
-        return "Eight";
-        break;
-      case 9:
-        return "Nine";
-        break;
-      default:
-        return "fsd";
-        break;
-  }
+std::string switch_it_up(int n){
+  if (n == 0) return "Zero";
+  else if (n == 1) return "One";
+  else if (n == 2) return "Two";
+  else if (n == 3) return "Three";
+  else if (n == 4) return "Four";
+  else if (n == 5) return "Five";
+  else if (n == 6) return "Six";
+  else if (n == 7) return "Seven";
+  else if (n == 8) return "Eight";
+  else return "Nine";
 }
-  
