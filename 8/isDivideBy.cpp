@@ -1,4 +1,1 @@
-bool isDivideBy(int number, int a, int b)
-{
-    return ((number % a == 0) & (number % b == 0)) ? true : false;
-}
+bool isDivideBy(int number, int a, int b) {return ((number % a == 0) & (number % b == 0)) ? true : false;}
