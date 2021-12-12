@@ -1,17 +1,7 @@
-#include <string>
-#include <cctype>
-
-bool isPalindrom(const std::string& str)
-{
-    std::string new_str = "";
-    for (int i = str.size(); i >= 0; i--)
-    {
-        new_str += str[i];
-    }
-    int m = 0, j = str.length() - 1;
-    while (m < j)
-    {
-        return new_str[m] != str[j] ? false : m++, j--;   
-    }
-    return true;
-}
+def is_palindrome(s):
+    i = len(s) - 1
+    new_str = ""
+    while i >= 0:
+        new_str += s[i]
+        i -= 1
+    return s.lower() == new_str.lower()
