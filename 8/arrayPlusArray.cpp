@@ -1,4 +1,4 @@
-​#include <vector>
+#include <vector>
 
 int arrayPlusArray(std::vector<int> a, std::vector<int> b) {
     int sum = 0;
